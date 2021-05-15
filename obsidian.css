@@ -247,6 +247,9 @@ img
 /******************/
 
 /* normal text outside of headings and code */
+.markdown-source-view.is-readable-line-width .CodeMirror {
+  max-width: none !important;  
+}
 .cm-s-obsidian
 {
   font-family: var(--font-family-editor);
@@ -318,6 +321,22 @@ img
   font-size: 16px;
   font-weight: bold;
   color: var(--text-title-h5);
+}
+
+/* editor code blocks */
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  border-left: none !important;
+  border-right: none !important;
+}
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  border-top: none !important;
+}
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-bottom: none !important;
+}
+
+.cm-formatting-strikethrough {
+  text-decoration: none !important;
 }
 
 /******************/
